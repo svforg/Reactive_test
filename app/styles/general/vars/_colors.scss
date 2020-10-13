@@ -1,0 +1,56 @@
+$colorLight                       : #FFFFFF;
+$colorDark                        : #1A1A1A;
+$colorActive                      : #FF892A;
+
+$colorMainFontLight               : $colorLight;
+$colorMainFontDark                : $colorDark;
+$colorActiveFont                  : $colorActive;
+
+//elements
+$colorTextButtonDark              : $colorDark;
+$colorTextButtonHoverLight        : $colorLight;
+$borderButtonDark                 : $colorDark;
+$borderButtonHoverLight           : $colorActive;
+$backgroundButtonHoverActive      : $colorActive;
+
+$colorTextButtonFilledLight       : $colorLight;
+$backgroundButtonFilledActive     : $colorActive;
+$backgroundButtonFilledHover      : #FFAB47;
+
+$colorTextLinkButtonFilled        : $colorLight;
+$backgroundLinkButtonFilled       : $colorActive;
+$backgroundLinkButtonFilledHover  : #FFAB47;
+
+$backgroundBurgerLinesDark        : $colorDark;
+$backgroundBurgerHoverActive      : $colorActive;
+
+$borderInput                      : #CCCCCC;
+
+$backgroundModal                  : $colorLight;
+$boxShadowModal                   : $colorDark;
+$backgroundModalClose             : #FFECE1;
+$backgroundModalCloseHover        : #FFAB47;
+$backgroundModalCloseLines        : $colorActive;
+$backgroundModalCloseLinesHover   : $colorLight;
+
+//header
+$colorHeaderLinkActive            : $colorActive;
+$colorHeaderLinkDark              : $colorDark;
+$backgroundHeaderLight            : $colorLight;
+$backgroundHeaderDropDownLight    : $colorLight;
+
+//footer
+$colorFooterFontLight             : $colorLight;
+$colorFooterMenuFontLight         : darken($colorLight, 20%);
+$colorFooterFontActive            : $colorActive;
+$backgroundFooterDark             : #232323;
+$borderFooterLight                :	darken($colorLight, 80%);
+
+//sections
+$backgroundFlipCard               : #F4F5F7;
+$backgroundMovingShapeTextRows    : #F7F7FF;
+$backgroundSpoilerOpen            : #FFECE1;
+$backgroundSpoilerOpenLines       : $colorActive;
+
+
+
