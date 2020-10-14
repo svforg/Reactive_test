@@ -1,0 +1,24 @@
+//vendor
+@import "general/style/vendor/normalize";
+@import "general/style/vendor/bootstrap-grid.min";
+
+//settings
+@import "general/style/misc/root";
+@import "general/style/vars/vars";
+@import "general/style/vars/sizes";
+@import "general/style/vars/breakpoints";
+@import "general/style/misc/adjustment";
+
+//typography
+@import "general/style/misc/mixin-fonts";
+@import "general/style/misc/typo";
+
+//elements
+@import "general/style/elements/button";
+@import "general/style/elements/input";
+@import "general/style/elements/checkbox";
+@import "general/style/elements/preloader";
+
+//pages
+@import "pages/header/header";
+@import "pages/index/index";

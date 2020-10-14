@@ -1,0 +1,104 @@
+.list-spoilers {
+  $self: &;
+  padding-left: 20px;
+
+  &__item {
+    margin-bottom: 24px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__desc {
+    display: none;
+    padding-top: 10px;
+  }
+
+  &__button {
+    position: relative;
+    text-align: left;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 100%;
+    padding: 0;
+
+    &_active {
+      .list-spoilers__button-icon {
+        animation: plus-animation-reverse .5s $transitionFunctionSecondary forwards;
+      }
+    }
+
+    &-icon {
+      position: absolute;
+      top: -4px;
+      left: -24px;
+      width: 22px;
+      height: 22px;
+      background: transparent;
+      border: none;
+      border-radius: 50%;
+      animation: plus-animation .5s $transitionFunctionSecondary forwards;
+      transition: all $transitionDurationPrimary $transitionFunctionPrimary;
+      content: '';
+
+      &::before,
+      &::after {
+        position: absolute;
+        top: 11px;
+        left: 6px;
+        width: 10px;
+        height: 2px;
+        background: $colorDarkPrimary;
+        transform: rotate(90deg);
+        transition: all $transitionDurationPrimary $transitionFunctionPrimary;
+        content: '';
+      }
+
+      &::after {
+        transform: rotate(0deg);
+      }
+    }
+
+    &-headings {
+      padding: 0;
+      text-align: left;
+    }
+  }
+}
+@keyframes plus-animation {
+  0% {
+    transform: rotate(45deg);
+  }
+  20% {
+    transform: rotate(-5deg);
+  }
+  55% {
+    transform: rotate(3deg);
+  }
+  80% {
+    transform: rotate(-1deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+@keyframes plus-animation-reverse {
+  0% {
+    transform: rotate(0);
+  }
+  20% {
+    transform: rotate(50deg);
+  }
+  55% {
+    transform: rotate(42deg);
+  }
+  80% {
+    transform: rotate(44deg);
+  }
+  100% {
+    transform: rotate(45deg);
+  }
+}

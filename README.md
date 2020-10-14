@@ -1,7 +1,6 @@
-# Reactive test task
+# svforgCV
 
 ## For open ptoject 
 - Open terminal in path with this project.
-- Enter npm install.
-- Enter gulp build.
-- Go to path /release 
+- Enter npm i.
+- Run compiler.exe

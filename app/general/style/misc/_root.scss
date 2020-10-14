@@ -1,0 +1,27 @@
+:root {
+  --dark-primary: #3B4256;
+
+  --light-primary: #E5E5E5;
+  --light-secondary: #FFFFFF;
+  --light-third: #F5F5F7;
+
+  --blue-primary: #3684E2;
+  --blue-secondary: #0061D9;
+  --blue-third: #0050B2;
+
+  --yellow-primary:  #FF9500;
+  --yellow-secondary:  #FFF5E5;
+
+  --green-primary:  #1BC400;
+
+  --transition-duration-primary: 0.2s;
+  --transition-duration-secondary: 0.5s;
+
+  --transition-function-primary: ease-in-out;
+  --transition-function-secondary: cubic-bezier(.4,0,.2,1);
+
+  --border-radius-primary: 4px;
+
+  --primary-font: 'GostUI2', Helvetica, sans-serif;
+  --secondary-font: 'SFProDisplay', Arial, sans-serif;
+}

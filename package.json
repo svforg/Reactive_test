@@ -1,44 +1,48 @@
 {
   "name": "carrottest",
   "version": "1.0.0",
-  "main": "gulpfile.js",
+  "main": "gulpfile.gulpfile.babel.js",
   "dependencies": {
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^2.26.12",
     "gulp": "^4.0.1",
     "gulp-autoprefixer": "^6.1.0",
-    "gulp-clean-css": "^4.2.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
     "gulp-concat": "^2.6.1",
     "gulp-group-css-media-queries": "^1.2.2",
     "gulp-imagemin": "^5.0.3",
-    "gulp-postcss": "^8.0.0",
-    "gulp-remove-code": "^3.0.4",
-    "gulp-rigger": "^0.5.8",
-    "gulp-sass": "^4.0.2",
+    "gulp-jshint": "^2.1.0",
+    "gulp-sass": "^4.1.0",
     "gulp-sourcemaps": "^2.6.5",
+    "gulp-file-include": "^2.1.1",
     "gulp-stylelint": "^9.0.0",
-    "gulp-token-replace": "^1.1.5",
     "gulp-uglify": "^3.0.2",
     "gulp-watch": "^4.1.1",
     "i": "^0.3.6",
-    "npm": "^6.9.2",
-    "postcss-reporter": "^6.0.1",
+    "jshint": "^2.12.0",
+    "npm": "^6.14.8",
+    "require-dir": "^1.2.0",
     "stylelint": "^10.0.1",
     "stylelint-config-rational-order": "^0.1.2",
     "stylelint-config-recommended": "^2.2.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/register": "^7.11.5"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/svforg/carrotLanding.git"
+    "url": "git+ssh://git@github.com/svforg/svforgCV.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/svforg/carrotLanding/issues"
+    "url": "https://github.com/svforg/svforgCV/issues"
   },
-  "homepage": "https://github.com/svforg/carrotLanding#readme",
+  "homepage": "https://github.com/svforg/svforgCV#readme",
   "description": ""
 }

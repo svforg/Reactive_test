@@ -19,10 +19,6 @@ $RECYCLE.BIN/
 
 # dependencies
 /node_modules
-/app/template/partner/cleaned
-/app/template/onlineconsult/cleaned
-/app/template/partner/concated
-/app/template/onlineconsult/concated
 /release
 /.idea
 
