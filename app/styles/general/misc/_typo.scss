@@ -1,6 +1,6 @@
 body, html {
   color: $colorMainFontDark;
-  font: 300 15px/24px normal $secondFont, Arial, sans-serif;
+  font: 300 18px/24px normal $primaryFont, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -8,7 +8,7 @@ h1 {
   margin: 0;
   padding: 72px 0 32px 0;
   color: $colorMainFontDark;
-  font: 40px/56px $mainFont, Arial, sans-serif;
+  font: 40px/56px $secondaryFont, Arial, sans-serif;
   @media ($smallTabletsMin) and ($smallTabletsMax) {
     font-size: 36px;
     line-height: 48px;
@@ -24,7 +24,7 @@ h2 {
   margin: 0;
   padding: 56px 0 32px 0;
   color: $colorMainFontDark;
-  font: 36px/48px $mainFont, Arial, sans-serif;
+  font: 36px/48px $secondaryFont, Arial, sans-serif;
   @media ($phonesMax) {
     padding: 8px 0;
     font-size: 24px;
@@ -36,7 +36,7 @@ h3	{
   margin: 0;
   padding: 32px 0 16px 0;
   color: $colorMainFontDark;
-  font: 30px/40px $mainFont, Arial, sans-serif;
+  font: 30px/40px $secondaryFont, Arial, sans-serif;
   @media ($phonesMax) {
     font-size: 20px;
     line-height: 30px;
@@ -47,9 +47,9 @@ h4	{
   margin: 0;
   padding: 32px 0 16px 0;
   color: $colorMainFontDark;
-  font: 24px/32px $mainFont, Arial, sans-serif;
+  font: 24px/32px $secondaryFont, Arial, sans-serif;
   @media ($phonesMax) {
-    font: 15px/24px $secondFont, Arial, sans-serif;
+    font: 15px/24px $secondaryFont, Arial, sans-serif;
   }
 }
 
@@ -57,10 +57,10 @@ h5	{
   margin: 0;
   padding: 32px 0 16px 0;
   color: $colorMainFontDark;
-  font: bold 20px/30px $mainFont, Arial, sans-serif;
+  font: bold 20px/30px $secondaryFont, Arial, sans-serif;
   letter-spacing: 0.001em;
   @media ($phonesMax) {
-    font: 900 15px/24px $secondFont, Arial, sans-serif;
+    font: 900 15px/24px $secondaryFont, Arial, sans-serif;
   }
 }
 
@@ -68,7 +68,7 @@ h6 {
   margin: 0;
   padding: 32px 0;
   color: $colorMainFontDark;
-  font: bold 25px/35px $thirdFont, Arial, sans-serif;
+  font: bold 25px/35px $secondaryFont, Arial, sans-serif;
   @media ($phonesMax) {
     font-size: 18px;
     line-height: 24px;
@@ -79,7 +79,7 @@ small {
   margin: 0;
   padding: 0;
   color: $colorMainFontDark;
-  font: bold 13px/24px $secondFont, Arial, sans-serif;
+  font: bold 13px/24px $secondaryFont, Arial, sans-serif;
 }
 
 p {

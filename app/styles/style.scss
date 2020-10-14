@@ -10,4 +10,9 @@
 @import "general/misc/adjustment";
 
 //sections
-@import "sections/left_sidebar";
+@import "sections/header/header";
+
+@import "sections/service/header/header";
+@import "sections/service/form/form__step1";
+@import "sections/service/form/form__step2";
+@import "sections/service/form/form__step3";

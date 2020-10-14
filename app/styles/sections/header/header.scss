@@ -1,0 +1,83 @@
+$headerBg: #3684E2;
+$logoColor: #ffffff;
+$authColor: #ffffff;
+
+.header {
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: 5;
+  width: 100%;
+  background-color: $headerBg;
+
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: $headerHeight;
+  }
+
+  .logo {
+    height: 56px;
+    margin-right: auto;
+
+    &__link {
+      display: flex;
+      align-items: center;
+      height: 100%;
+    }
+
+    &__image {
+      height: inherit;
+      margin-right: 21px;
+    }
+
+    &__text {
+      max-width: 364px;
+      overflow: hidden;
+      color: $logoColor;
+      font-weight: 700;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .auth {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+
+    &__link {
+      display: flex;
+      margin-right: 28px;
+      color: $authColor;
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    &__profile {
+      position: relative;
+      padding-left: 35px;
+
+      &:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        background: url('../img/header/auth/profile.svg') 100% no-repeat;
+        content: "";
+      }
+    }
+  }
+}

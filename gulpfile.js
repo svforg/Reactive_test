@@ -53,7 +53,6 @@ const vendorJSFiles =  [
     './app/js/vendor/jquery/*.js',
     './app/js/vendor/bootstrapJS/*.js',
     './app/js/scripts/general/*.js',
-
 ];
 const commonJSFiles =  [
     './app/js/scripts/**/*.js'
