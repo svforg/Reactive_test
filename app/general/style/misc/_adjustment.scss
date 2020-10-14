@@ -6,9 +6,9 @@ body, html {
 
 main {
   position: relative;
+  min-height:100vh;
   padding-top: $headerHeight;
   background: $colorLightPrimary;
-  min-height:100vh;
   @media ($phonesMax) {
     padding-top: $headerHeightMobile;
   }

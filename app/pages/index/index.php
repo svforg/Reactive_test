@@ -1,21 +1,10 @@
 <?php require $_SERVER['DOCUMENT_ROOT'] . "/inc/header.php"; ?>
 
-<div class="wrapper">
+<main class="page-content">
 
-    <div class="row">
+    <div class="wrapper">
 
-        <div class="col-lg-8">
-
-            <main class="page-content">
-                main
-            </main>
-        </div>
-
-        <div class="col-lg-4">
-
-            <aside>
-                sidebar
-            </aside>
-        </div>
+        @@include('service/service.html')
     </div>
-</div>
+</main>
+

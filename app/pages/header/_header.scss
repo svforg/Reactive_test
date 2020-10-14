@@ -2,7 +2,7 @@ $headerBg: $colorBluePrimary;
 $logoColor: $colorLightSecondary;
 $authColor: $colorLightSecondary;
 
-.header {
+.site-header {
   position: fixed;
   top:0;
   left:0;
@@ -34,15 +34,12 @@ $authColor: $colorLightSecondary;
 
     &__text {
       max-width: 364px;
+      padding-top: 5px;
       overflow: hidden;
       color: $logoColor;
       font-weight: 700;
       white-space: nowrap;
       text-overflow: ellipsis;
-
-      &:hover {
-        text-decoration: underline;
-      }
     }
   }
 

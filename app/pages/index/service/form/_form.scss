@@ -1,0 +1,45 @@
+$stepBg : $colorLightSecondary;
+$stepCounterBg : $colorBlueSecondary;
+$stepCounterColor : $colorLightSecondary;
+
+.form {
+  counter-reset: steps-counter;
+
+  .step {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+    padding: 24px 188px 24px 96px;
+    background: $stepBg;
+    border-radius: $borderRadiusPrimary;
+    counter-increment: steps-counter;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &::before {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 48px;
+      height: 48px;
+      color: $stepCounterColor;
+      background: $stepCounterBg;
+      border-radius: 50%;
+      content: counter(steps-counter);
+    }
+
+    &__title {
+      margin-bottom: 24px;
+    }
+
+    &__radio {
+      margin-bottom: 14px;
+    }
+  }
+}
