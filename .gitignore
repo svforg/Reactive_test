@@ -19,7 +19,7 @@ $RECYCLE.BIN/
 
 # dependencies
 /node_modules
-/release
+/dist
 /.idea
 
 
