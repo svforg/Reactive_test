@@ -1,3 +1,10 @@
+/***************************** refactor this merge with radio *********/
+
+$labelBg : $colorLightSecondary;
+$labelBgBefore : $colorDarkPrimary;
+$labelBgActive : $colorDarkPrimary;
+$labelBorderColor : $colorBlueSecondary;
+
 .checkbox {
 
   &-label {
@@ -5,7 +12,7 @@
     display: flex;
     flex-direction: column;
     padding: 14px 14px 14px 44px;
-    background: $colorLightThird;
+    background: $labelBg;
     border: 2px solid transparent;
     border-radius: $borderRadiusPrimary;
     cursor: pointer;
@@ -17,17 +24,16 @@
       width: 20px;
       height: 20px;
       background: #fff;
-      border: 2px solid $colorDarkPrimary;
+      border: 2px solid $labelBgBefore;
       content: "";
     }
 
     &_active {
-      background: #fff;
-      border-color: #0673ff;
+      background: $labelBgActive;
+      border-color: $labelBorderColor;
 
       &:before {
-        background: url(/../img/service/form/icon-check.svg) center / 12px 10px no-repeat, #0673ff;
-        border-color: #0673ff;
+        background: url(/../img/service/form/icon-check.svg) center / 12px 10px no-repeat, $labelBorderColor;
         content: "";
       }
     }

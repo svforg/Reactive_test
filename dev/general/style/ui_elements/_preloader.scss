@@ -1,12 +1,13 @@
 $preloaderColor : $colorBluePrimary;
+$preloaderBG : $colorLightPrimary;
 
 .preloader_cubic  {
   position: relative;
   width: 60px;
   height: 60px;
   margin: auto;
-  background: $colorLightPrimary;
-  border: 2px solid  $preloaderColor;
+  background: $preloaderBG;
+  border: 2px solid $preloaderColor;
 
   &:after {
     position: absolute;
