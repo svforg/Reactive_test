@@ -1,6 +1,6 @@
 $(function (e) {
 
-    var STEP_ACTIVE_ONLOAD = 1;
+    var STEP_ACTIVE_ONLOAD = 0;
 
     var stepParent = $(".service__form .step"),
         stepsInner = $(".service__form"),
@@ -20,6 +20,23 @@ $(function (e) {
         .stop(true,true)
         .slideDown();
 
+    buttonEdit.click(function(e) {
+
+        var thisStep = $(this).closest(stepParent).find(stepCollapse),
+            allSteps = $(this).closest(stepsInner).find(stepCollapse);
+
+        if ( thisStep.css('display') === 'flex' ) return false;
+
+        allSteps.stop(true,true)
+            .slideUp();
+
+        thisStep.css("display","flex")
+            .hide()
+            .stop(true,true)
+            .slideDown();
+
+        return false;
+    });
 
     buttonNext.bind("click", function(e) {
         e.preventDefault();
