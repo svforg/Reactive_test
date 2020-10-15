@@ -1,8 +1,8 @@
 'use strict';
 
-const projectName = 'index';
+const projectName = 'footer';
 
-const templatePath = './dist/';
+const templatePath = './dist/inc/';
 const phpFiles = './dev/pages/' + projectName + '/*.php';
 
 import * as templateFile from './tasks/template.js';
@@ -10,3 +10,5 @@ import * as templateFile from './tasks/template.js';
 exports.build = () => {
     templateFile.template(phpFiles, templatePath)
 };
+
+

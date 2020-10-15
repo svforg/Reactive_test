@@ -1,0 +1,73 @@
+$stepBg : $colorLightSecondary;
+$stepCounterBg : $colorBlueSecondary;
+$stepReadyCounterBg : $colorGreenPrimary;
+$stepCounterColor : $colorLightSecondary;
+
+.form {
+  counter-reset: steps-counter;
+
+  .step {
+    position: relative;
+    margin-bottom: 24px;
+    padding: 24px 188px 24px 96px;
+    background: $stepBg;
+    border-radius: $borderRadiusPrimary;
+    counter-increment: steps-counter;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &::before {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 48px;
+      height: 48px;
+      color: $stepCounterColor;
+      background: $stepCounterBg;
+      border-radius: 50%;
+      content: counter(steps-counter);
+    }
+
+    &__title {
+      margin-bottom: 0;
+    }
+
+    &__radio {
+      margin-bottom: 14px;
+    }
+
+    &__collapse {
+      flex-direction: column;
+      padding-top: 24px;
+    }
+  }
+
+  &-success {
+    position: relative;
+    display: none;
+    padding: 24px 188px 24px 96px;
+    background: $stepBg;
+    border-radius: $borderRadiusPrimary;
+    counter-increment: steps-counter;
+
+    &::before {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 48px;
+      height: 48px;
+      color: $stepCounterColor;
+      background: $stepReadyCounterBg;
+      border-radius: 50%;
+      content: "";
+    }
+  }
+}

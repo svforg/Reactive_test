@@ -2,8 +2,8 @@
 
 const projectName = 'header';
 
-const templatePath = './release/inc/';
-const phpFiles = './app/pages/' + projectName + '/*.php';
+const templatePath = './dist/inc/';
+const phpFiles = './dev/pages/' + projectName + '/*.php';
 
 import * as templateFile from './tasks/template.js';
 

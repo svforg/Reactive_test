@@ -1,0 +1,38 @@
+body, html {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  position: relative;
+  min-height:101vh;
+  padding-top: $headerHeight;
+  background: $colorLightPrimary;
+  @media ($phonesMax) {
+    padding-top: $headerHeightMobile;
+  }
+}
+
+ul, menu, ol, section, figure, aside {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: $containerWidth;
+  margin: 0 auto;
+  padding: $paddingWrapperDesktop;
+  @media ($laptopsMax) {
+    padding: $paddingWrapperLaptops;
+  }
+  @media ($phonesMax) {
+    max-width: 100%;
+    padding: $paddingWrapperMobile;
+  }
+}

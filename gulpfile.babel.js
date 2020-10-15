@@ -16,5 +16,7 @@ gulp.task('default', gulp.parallel(
 
     //project.header.build,
 
+    //project.footer.build,
+
     project.allFiles.build
 ));
