@@ -6,15 +6,16 @@ $(function (e) {
     var sendPreLoader = $(".service__form-loader");
     var formSuccess = $(".service__form-success");
 
+
     formInner.on("submit", function(e) {
         e.preventDefault();
 
         var thisForm = $(this),
             data = {},
-            dataSend = new FormData();
-            //formValid = thisForm.valid();
+            dataSend = new FormData(),
+            formValid = thisForm.valid();
 
-        //if ( !formValid ) return false;
+        if ( !formValid ) return false;
 
         thisForm.fadeOut(100);
 
@@ -23,6 +24,7 @@ $(function (e) {
         data['phone'] = thisForm.find("input[name='phone']").val();
 
         dataSend.append('data', JSON.stringify(data));
+
 
         $.ajax({
             type: "POST",

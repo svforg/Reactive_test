@@ -20,7 +20,7 @@ const path = {
         scriptsOrdered : [
             './dev/general/js/vendor/jquery/*.js',
             './dev/general/js/vendor/bootstrapJS/*.js',
-            //'./dev/general/js/libs/**/*.js',
+            './dev/general/js/libs/**/*.js',
             './dev/general/js/ui_elements.js',
             './dev/pages/**/*.js',
         ]

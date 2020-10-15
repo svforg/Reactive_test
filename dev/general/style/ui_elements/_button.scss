@@ -4,7 +4,8 @@ $backgroundButtonHover              : $colorBluePrimary;
 $borderColorButton                  : $colorBlueSecondary;
 $borderColorButtonHover             : $colorBluePrimary;
 
-$colorButtonInverse                 : $colorBlueSecondary;
+$colorButtonInverse                 : $colorBlueThird;
+$colorButtonInverseHover            : $colorLightPrimary;
 $backgroundButtonInverse            : $colorLightPrimary;
 $backgroundButtonInverseHover       : $colorBluePrimary;
 
@@ -28,6 +29,10 @@ $backgroundButtonActive             : $colorBlueThird;
               background $transitionDurationPrimary $transitionFunctionSecondary,
               border-color, $transitionDurationPrimary $transitionFunctionSecondary;
 
+  &_link {
+    line-height: 1.7;
+  }
+
   &:hover {
     background: $backgroundButtonHover;
     border-color: $borderColorButtonHover;
@@ -38,12 +43,13 @@ $backgroundButtonActive             : $colorBlueThird;
     background: $backgroundButtonInverse;
 
     &:hover {
+      color: $colorButtonInverseHover;
       background: $backgroundButtonInverseHover;
       border-color: $borderColorButtonHover;
     }
+  }
 
-    &:active {
-      background: $backgroundButtonActive;
-    }
+  &:active {
+    background: $backgroundButtonActive;
   }
 }

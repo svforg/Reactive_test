@@ -1,55 +1,108 @@
 $(function (e) {
-    // $(".card_from_basket #signup, .card_from_basket #login").validate({
-    //
-    //     rules: {
-    //         pphone: {
-    //             requiredPhone: true,
-    //             minlengthPhone: 10
-    //         },
-    //         pname: {
-    //             required: true,
-    //         },
-    //         pcountry: {
-    //             required: true,
-    //         },
-    //         pcity: {
-    //             required: true,
-    //         },
-    //         pstreet: {
-    //             required: true,
-    //         },
-    //         phouse: {
-    //             required: true,
-    //         },
-    //         pemail: {
-    //             required: true,
-    //             email: true
-    //         }
-    //     },
-    //     messages: {
-    //         pphone: {
-    //             checkMask: "Введите номер телефона"
-    //         },
-    //         pcountry: {
-    //             required: "Введите Страну",
-    //         },
-    //         pcity: {
-    //             required: "Введите Город",
-    //         },
-    //         pstreet: {
-    //             required: "Введите Улицу",
-    //         },
-    //         phouse: {
-    //             required: "Введите Дом",
-    //         },
-    //         pname: {
-    //             required: "Введите ФИО",
-    //         },
-    //         pemail: {
-    //             required: "Введите электронную почту",
-    //             email: "Пример name@domain.com"
-    //         }
-    //     },
-    //     onkeyup: false,
-    // });
+
+    var formValidate = $(".service__form"),
+        inputPhone = formValidate.find("input[name='phone']");
+
+    inputPhone.mask("+7 999-999-99-99", {autoclear: false});
+
+    formValidate.validate({
+
+        rules: {
+            "surname": {
+                required: true,
+            },
+            "name": {
+                required: true,
+            },
+            "grand-name": {
+                required: true,
+            },
+            "email": {
+                required: true,
+            },
+            "phone": {
+                required: true,
+                phoneValidateMask: true,
+            },
+            "doc": {
+                required: true,
+            },
+            "doc-series": {
+                required: true,
+            },
+            "doc-number": {
+                required: true,
+            },
+            "date-day": {
+                required: true,
+            },
+            "date-month": {
+                required: true,
+            },
+            "date-year": {
+                required: true,
+            },
+            "checkbox-consent": {
+                required: true,
+            },
+            "checkbox-knowledge": {
+                required: true,
+            },
+        },
+        messages: {
+            "surname": {
+                required: "Поле обязательно",
+            },
+            "name": {
+                required: "Поле обязательно",
+            },
+            "grand-name": {
+                required: "Поле обязательно",
+            },
+            "email": {
+                required: "Поле обязательно",
+            },
+            "phone": {
+                required: "Поле обязательно",
+            },
+            "doc": {
+                required: "Поле обязательно",
+            },
+            "doc-series": {
+                required: "Поле обязательно",
+            },
+            "doc-number": {
+                required: "Поле обязательно",
+            },
+            "date-day": {
+                required: "Поле обязательно",
+            },
+            "date-month": {
+                required: "Поле обязательно",
+            },
+            "date-year": {
+                required: "Поле обязательно",
+            },
+            "checkbox-consent": {
+                required: "Поле обязательно",
+            },
+            "checkbox-knowledge": {
+                required: "Поле обязательно",
+            },
+        },
+        onkeyup: false,
+    });
+
+    $.validator.addMethod("phoneValidateMask", function (value, element) {
+
+        var inputPhoneValue = inputPhone.val();
+        var inputPhoneValueClean = inputPhoneValue.replace(/[-\s]/g,"").replace(/[-_—]+/g ,"");
+
+        if ( (inputPhoneValueClean.match(/^(\+7|7|8)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$/gm) || []).length !== 1 ) {
+
+            return false;
+
+        } else return  true;
+
+    }, $.validator.format("Некорректный номер"));
 });

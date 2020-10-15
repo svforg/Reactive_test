@@ -53,8 +53,21 @@ $authColor: $colorLightSecondary;
       margin-right: 28px;
       color: $authColor;
 
+      &:after {
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: #fff;
+        transition: width $transitionDurationPrimary $transitionFunctionSecondary;
+        content: "";
+      }
+
       &:hover {
-        text-decoration: underline;
+        &:after {
+          width: 100%;
+        }
       }
 
       &:last-child {

@@ -1,5 +1,5 @@
 $borderColorInput                 : rgba(59, 66, 86, 0.5);
-$borderColorInputError            : #a94442;
+$inputError                       : #a94442;
 $colorInput                       : $colorDarkPrimary;
 
 input[type='text'],
@@ -49,9 +49,10 @@ input[type='number'] {
   -moz-appearance: textfield;
 }
 
+
 .input-field {
-  max-width: 330px;
-  min-height: 40px;
+  width: 100%;
+  min-height: 48px;
   padding: 0 12px;
   color: $colorInput;
   border: 1px solid $borderColorInput;
@@ -60,12 +61,14 @@ input[type='number'] {
   &:focus {
     color: $colorInput;
   }
-
-  &_error {
-    border-color: $borderColorInputError;
-  }
 }
-
+label.error {
+  color: $inputError;
+  font-size: 13px;
+}
+input[aria-invalid='true'] {
+  border-color: $inputError;
+}
 
 
 

@@ -1,47 +1,196 @@
 <fieldset class="form__step step">
 
-    <span class="h4 step__title step__button-edit">
-        Выбор заявителя
+    <div class="step__edit">Изменить</div>
+
+    <span class="h4 step__title">
+        Данные заявителя
     </span>
 
     <div class="step__collapse">
 
-        <label class="radio-label step__radio"
-               for="radio-declarer__individual">
+        <div class="step__group">
 
-            <input class="radio-input"
-                   id="radio-declarer__individual"
-                   type="radio"
-                   name="radio-declarer"
-                   value="individual" />
+            <label class="input-label step__input-label"
+                   for="input-surname-second-step">
+                Фамилия
+            </label>
 
-            <span class="radio-name">
-            Константинопольский К.К.
-        </span>
+            <input class="input-field"
+                   id="input-surname-second-step"
+                   name="surname"
+                   type="text"
+                   required
+                   value="Константинопольский"/>
+        </div>
 
-            <span class="radio-type">
-            Физическое лицо
-        </span>
-        </label>
+        <div class="step__group">
 
-        <label class="radio-label step__radio"
-               for="radio-declarer__legal-entity">
+            <label class="input-label step__input-label"
+                   for="input-name-second-step">
+                Имя
+            </label>
 
-            <input class="radio-input"
-                   id="radio-declarer__legal-entity"
-                   type="radio"
-                   name="radio-declarer"
-                   value="legal-entity" />
+            <input class="input-field"
+                   id="input-name-second-step"
+                   name="name"
+                   type="text"
+                   required
+                   />
+        </div>
 
-            <span class="radio-name">
-            ООО «Константинополь»
-        </span>
+        <div class="step__group">
 
-            <span class="radio-type">
-            Юридическое лицо
-        </span>
-        </label>
+            <label class="input-label step__input-label"
+                   for="input-name-second-step">
+                Отчество
+            </label>
 
-        <button class="button step__button-next">Продолжить</button>
+            <input class="input-field"
+                   id="input-grand-name-second-step"
+                   name="grand-name"
+                   type="text"
+                   required
+                   />
+        </div>
+
+        <div class="step__group">
+
+            <label class="input-label step__input-label"
+                   for="input-email-second-step">
+                Электронная почта
+            </label>
+
+            <input class="input-field"
+                   id="input-email-second-step"
+                   name="email"
+                   type="email"
+                   required
+            />
+        </div>
+
+        <div class="step__group">
+
+            <label class="input-label step__input-label"
+                   for="input-phone-second-step">
+                Телефон
+            </label>
+
+            <input class="input-field"
+                   id="input-phone-second-step"
+
+                   name="phone"
+                   type="tel"
+                   required
+            />
+        </div>
+
+        <div class="step__group-title">
+            <strong>
+                Документ, удостоверяющий личность
+            </strong>
+        </div>
+
+        <div class="step__group">
+
+            <label class="input-label step__input-label"
+                   for="input-doc-second-step">
+                Документ
+            </label>
+
+            <input class="input-field"
+                   id="input-doc-second-step"
+                   name="doc"
+                   type="text"
+                   required
+            />
+        </div>
+
+        <div class="step__group-inner step__group-inner-doc">
+
+            <div class="step__group step__group-series">
+
+                <label class="input-label step__input-label"
+                       for="input-doc-series-second-step">
+                    Серия
+                </label>
+
+                <input class="input-field"
+                       id="input-doc-series-second-step"
+                       name="doc-series"
+                       type="text"
+                       required
+                />
+            </div>
+
+            <div class="step__group step__group-number">
+
+                <label class="input-label step__input-label"
+                       for="input-doc-number-second-step">
+                    Номер
+                </label>
+
+                <input class="input-field"
+                       id="input-doc-number-second-step"
+                       name="doc-number"
+                       type="text"
+                       required
+                />
+            </div>
+        </div>
+
+        <div class="step__group-caption">
+            Когда выдан
+        </div>
+
+        <div class="step__group-inner step__group-inner-date">
+
+            <div class="step__group step__group-day">
+
+                <label class="input-label step__input-label"
+                       for="input-date-day-second-step">
+                    День
+                </label>
+
+                <input class="input-field"
+                       id="input-date-day-second-step"
+                       name="date-day"
+                       type="text"
+                       required
+                />
+            </div>
+
+            <div class="step__group step__group-month">
+
+                <label class="input-label step__input-label"
+                       for="input-date-month-second-step">
+                    Месяц
+                </label>
+
+                <input class="input-field"
+                       id="input-date-month-second-step"
+                       name="date-month"
+                       type="text"
+                       required
+                />
+            </div>
+
+            <div class="step__group step__group-year">
+
+                <label class="input-label step__input-label"
+                       for="input-date-year-second-step">
+                    Год
+                </label>
+
+                <input class="input-field"
+                       id="input-date-year-second-step"
+                       name="date-year"
+                       type="text"
+                       required
+                />
+            </div>
+
+        </div>
+
+        <button class="button step__button-next step__button-next_second">Продолжить</button>
     </div>
 </fieldset>

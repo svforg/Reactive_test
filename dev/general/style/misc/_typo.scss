@@ -114,14 +114,8 @@ a {
 }
 
 a, a:active, a:visited {
-  position: relative;
-  color: $colorBlueSecondary;
   text-decoration: none;
   transition: color $transitionDurationPrimary $transitionFunctionPrimary;
-}
-
-a:hover {
-  color: $colorBlueThird;
 }
 
 h1, h2, h3, h4, h5, h6,
