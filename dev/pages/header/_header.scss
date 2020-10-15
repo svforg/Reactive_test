@@ -60,21 +60,23 @@ $authColor: $colorLightSecondary;
       &:last-child {
         margin-right: 0;
       }
-    }
 
-    &__profile {
-      position: relative;
-      padding-left: 35px;
+      &_profile {
+        position: relative;
+        padding-left: 35px;
 
-      &:before {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 20px;
-        height: 20px;
-        background: url('../img/header/auth/profile.svg') 100% no-repeat;
-        content: "";
+        &:before {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 20px;
+          height: 20px;
+          background: url('../img/header/auth/profile.svg') 100% no-repeat;
+          content: "";
+        }
       }
     }
+
+
   }
 }
