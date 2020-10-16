@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+	<script src="https://unpkg.com/css-vars-ponyfill@2/dist/css-vars-ponyfill.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/js-beautify@1/js/lib/beautify-css.min.js"></script>
+	<script>
+        cssVars({
+            // Treat all browsers as legacy
+            onlyLegacy: false,
+        });
+
+	</script>
+
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -40,6 +50,7 @@
 	<!-- Load CSS Start -->
 	<script>loadCSS( "/css/style.css", false, "all" );</script>
 	<!-- Load CSS End -->
+
 </head>
 <body>
 <!--[if lt IE 10]>
