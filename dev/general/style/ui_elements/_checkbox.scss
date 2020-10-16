@@ -2,7 +2,7 @@
 
 $labelBg : $colorLightSecondary;
 $labelBgBefore : $colorDarkPrimary;
-$labelBgActive : $colorDarkPrimary;
+$labelBgActive : $colorLightSecondary;
 $labelBorderColor : $colorBlueSecondary;
 
 .checkbox {
@@ -34,6 +34,7 @@ $labelBorderColor : $colorBlueSecondary;
 
       &:before {
         background: url(/../img/service/form/icon-check.svg) center / 12px 10px no-repeat, $labelBorderColor;
+        border-color: $labelBorderColor;
         content: "";
       }
     }
