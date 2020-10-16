@@ -18,6 +18,8 @@ $authColor: $colorLightSecondary;
   }
 
   .logo {
+    width: 100%;
+    max-width: 360px;
     height: 56px;
     margin-right: auto;
 
@@ -28,6 +30,7 @@ $authColor: $colorLightSecondary;
     }
 
     &__image {
+      max-width: 38px;
       height: inherit;
       margin-right: 21px;
     }
