@@ -15,9 +15,12 @@ $authColor: $colorLightSecondary;
     flex-wrap: wrap;
     align-items: center;
     min-height: $headerHeight;
+    padding: 16px 0;
   }
 
   .logo {
+    width: 100%;
+    max-width: 360px;
     height: 56px;
     margin-right: auto;
 
@@ -28,6 +31,7 @@ $authColor: $colorLightSecondary;
     }
 
     &__image {
+      max-width: 38px;
       height: inherit;
       margin-right: 21px;
     }
@@ -49,6 +53,7 @@ $authColor: $colorLightSecondary;
     align-items: stretch;
 
     &__link {
+      position: relative;
       display: flex;
       margin-right: 28px;
       color: $authColor;
@@ -59,15 +64,10 @@ $authColor: $colorLightSecondary;
         left: 0;
         width: 0;
         height: 2px;
-        background: #fff;
+        overflow: hidden;
+        background:$colorLightSecondary;
         transition: width $transitionDurationPrimary $transitionFunctionSecondary;
         content: "";
-      }
-
-      &:hover {
-        &:after {
-          width: 100%;
-        }
       }
 
       &:last-child {
@@ -75,7 +75,6 @@ $authColor: $colorLightSecondary;
       }
 
       &_profile {
-        position: relative;
         padding-left: 35px;
 
         &:before {
@@ -88,8 +87,12 @@ $authColor: $colorLightSecondary;
           content: "";
         }
       }
+
+      &:hover {
+        &:after {
+          width: 100%;
+        }
+      }
     }
-
-
   }
 }

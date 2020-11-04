@@ -41,6 +41,12 @@ $(function (e) {
 });
 /****************************NEED REFACTOR*************/
 
+/**************************** IE9+ CSS VARS PONYFILL *************/
 
 $(function (e) {
+    cssVars({
+        // Treat all browsers as legacy
+        onlyLegacy: false,
+    });
 });
+/**************************** IE9+ CSS VARS PONYFILL *************/
