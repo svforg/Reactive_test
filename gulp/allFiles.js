@@ -17,13 +17,7 @@ const path = {
         phpFiles: './dev/pages/*.php',
         imagesFiles: './dev/general/img/**/*.*',
         fontsFiles: './dev/general/fonts/**/*.*',
-        scriptsOrdered : [
-            './dev/general/js/vendor/jquery/*.js',
-            './dev/general/js/vendor/bootstrapJS/*.js',
-            './dev/general/js/libs/**/*.js',
-            './dev/general/js/ui_elements.js',
-            './dev/pages/**/*.js',
-        ]
+        scriptsOrdered : './dev/index.js',
     }
 };
 
