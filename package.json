@@ -6,10 +6,11 @@
   "dependencies": {
     "browser-sync": "^2.26.13",
     "gh-pages": "^3.1.0",
-    "gulp": "^4.0.1",
+    "gulp": "^4.0.2",
     "gulp-autoprefixer": "^6.1.0",
     "gulp-babel": "^8.0.0",
     "gulp-clean-css": "^4.3.0",
+    "gulp-cli": "^2.3.0",
     "gulp-concat": "^2.6.1",
     "gulp-file-include": "^2.3.0",
     "gulp-group-css-media-queries": "^1.2.2",
@@ -36,7 +37,7 @@
   "scripts": {
     "start": "gulp watch",
     "build": "gulp",
-    "predeploy": "npm run build",
+    "predeploy": "npm run gulp",
     "deploy": "gh-pages -d build"
   },
   "repository": {
