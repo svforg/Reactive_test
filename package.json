@@ -39,7 +39,7 @@
     "start": "gulp watch",
     "build": "gulp",
     "predeploy": "npm run build",
-    "deploy": "gulp deploy"
+    "deploy": "npm run gulp deploy"
   },
   "repository": {
     "type": "git",

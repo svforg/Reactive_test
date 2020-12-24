@@ -3,7 +3,7 @@
 const projectName = 'index';
 
 const templatePath = './build/';
-const phpFiles = './src/pages/' + projectName + '/*.php';
+const phpFiles = './src/pages/' + projectName + '/*.html';
 
 import * as templateFile from './tasks/template.js';
 

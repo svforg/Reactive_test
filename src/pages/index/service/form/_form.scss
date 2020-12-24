@@ -53,7 +53,7 @@ $stepCounterColor : $colorLightSecondary;
         left: 0;
         width: 19px;
         height: 19px;
-        background: url(/../img/service/form/icon-edit.svg) center / 100% no-repeat;
+        background: url(../img/service/form/icon-edit.svg) center / 100% no-repeat;
         transform: translateY(-50%);
         content: "";
       }
@@ -156,14 +156,14 @@ $stepCounterColor : $colorLightSecondary;
         left: 16px;
         width: 20px;
         height: 20px;
-        background: url(/../img/service/form/icon-notice.svg) center / contain no-repeat;
+        background: url(../img/service/form/icon-notice.svg) center / contain no-repeat;
         content: "";
       }
     }
 
     &_ready {
       &::before {
-        background: url(/../img/service/form/icon-check.svg) center / 20px no-repeat, $stepReadyCounterBg;
+        background: url(../img/service/form/icon-check.svg) center / 20px no-repeat, $stepReadyCounterBg;
         content: "";
       }
 
@@ -192,7 +192,7 @@ $stepCounterColor : $colorLightSecondary;
       width: 48px;
       height: 48px;
       color: $stepCounterColor;
-      background: url(/../img/service/form/icon-check.svg) center / 20px no-repeat, $stepReadyCounterBg;
+      background: url(../img/service/form/icon-check.svg) center / 20px no-repeat, $stepReadyCounterBg;
       border-radius: 50%;
       content: "";
     }
