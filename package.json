@@ -1,52 +1,51 @@
 {
-  "name": "rktv",
+  "name": "Reactive_test",
+  "homepage": "https://svforg.github.io/Reactive_test/",
   "version": "1.0.0",
   "main": "gulpfile.gulpfile.babel.js",
   "dependencies": {
-    "jquery": "^3.5.1"
-  },
-  "devDependencies": {
-    "browser-sync": "^2.26.12",
+    "browser-sync": "^2.26.13",
+    "gh-pages": "^3.1.0",
     "gulp": "^4.0.1",
     "gulp-autoprefixer": "^6.1.0",
     "gulp-babel": "^8.0.0",
     "gulp-clean-css": "^4.3.0",
-    "gulp-file-include": "^2.1.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-file-include": "^2.3.0",
     "gulp-group-css-media-queries": "^1.2.2",
     "gulp-imagemin": "^5.0.3",
+    "gulp-jshint": "^2.1.0",
     "gulp-sass": "^4.1.0",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-stylelint": "^9.0.0",
+    "gulp-uglify": "^3.0.2",
     "gulp-watch": "^4.1.1",
     "i": "^0.3.6",
-    "npm": "^6.14.8",
+    "jshint": "^2.12.0",
+    "npm": "^6.14.10",
     "require-dir": "^1.2.0",
     "stylelint": "^10.0.1",
     "stylelint-config-rational-order": "^0.1.2",
-    "stylelint-config-recommended": "^2.2.0",
-    "eslint": "^7.12.1",
-    "gulp-eslint": "^6.0.0",
-    "gulp-if": "^3.0.0",
-    "gulp-svgstore": "^7.0.1",
-    "webpack": "^5.4.0",
-    "webpack-stream": "^6.1.0",
-    "@babel/core": "^7.12.3",
-    "@babel/preset-env": "^7.12.1",
-    "@babel/register": "^7.11.5",
-    "babel-loader": "^8.1.0"
+    "stylelint-config-recommended": "^2.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/register": "^7.12.10"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "gulp watch",
+    "build": "gulp",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/svforg/svforgCV.git"
+    "url": "git+ssh://git@github.com/svforg/Reactive_test.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/svforg/svforgCV/issues"
-  },
-  "homepage": "https://github.com/svforg/svforgCV#readme",
-  "description": ""
+    "url": "https://github.com/svforg/Reactive_test/issues"
+  }
 }

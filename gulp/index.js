@@ -2,8 +2,8 @@
 
 const projectName = 'index';
 
-const templatePath = './dist/';
-const phpFiles = './dev/pages/' + projectName + '/*.php';
+const templatePath = './build/';
+const phpFiles = './src/pages/' + projectName + '/*.php';
 
 import * as templateFile from './tasks/template.js';
 

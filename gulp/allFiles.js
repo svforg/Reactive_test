@@ -3,21 +3,27 @@
 const path = {
     release: {
         localDomain: 'test.rktv-local/',
-        mainPath : './dist',
-        stylePath: './dist/css',
-        templatePath: './dist',
-        imagesPath: './dist/img/',
-        scriptsPath: './dist/js/',
-        fontsPath: './dist/fonts/'
+        mainPath : './build',
+        stylePath: './build/css',
+        templatePath: './build',
+        imagesPath: './build/img/',
+        scriptsPath: './build/js/',
+        fontsPath: './build/fonts/'
     },
     app: {
-        styleWatch: './dev/pages/**/*.scss',
-        styleFiles: './dev/*.scss',
-        phpWatch: './dev/pages/**/*.php',
-        phpFiles: './dev/pages/*.php',
-        imagesFiles: './dev/general/img/**/*.*',
-        fontsFiles: './dev/general/fonts/**/*.*',
-        scriptsOrdered : './dev/index.js',
+        styleWatch: './src/pages/**/*.scss',
+        styleFiles: './src/*.scss',
+        phpWatch: './src/pages/**/*.php',
+        phpFiles: './src/pages/*.php',
+        imagesFiles: './src/general/img/**/*.*',
+        fontsFiles: './src/general/fonts/**/*.*',
+        scriptsOrdered : [
+            './src/general/js/vendor/jquery/*.js',
+            './src/general/js/vendor/bootstrapJS/*.js',
+            './src/general/js/libs/**/*.js',
+            './src/general/js/ui_elements.js',
+            './src/pages/**/*.js',
+        ]
     }
 };
 

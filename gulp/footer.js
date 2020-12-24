@@ -2,8 +2,8 @@
 
 const projectName = 'footer';
 
-const templatePath = './dist/inc/';
-const phpFiles = './dev/pages/' + projectName + '/*.php';
+const templatePath = './build/inc/';
+const phpFiles = './src/pages/' + projectName + '/*.php';
 
 import * as templateFile from './tasks/template.js';
 
