@@ -11,6 +11,9 @@ ehthumbs_vista.db
 # Dump file
 *.stackdump
 
+# production
+/build
+
 # Folder config file
 [Dd]esktop.ini
 
@@ -19,7 +22,6 @@ $RECYCLE.BIN/
 
 # dependencies
 /node_modules
-/dist
 /.idea
 
 
