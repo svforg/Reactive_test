@@ -9,6 +9,8 @@ $headerBottomLine : $colorDarkPrimary;
 
     &-pic {
       display: block;
+      max-width: 80px;
+      max-height: 80px;
       margin-bottom: 12px;
     }
   }

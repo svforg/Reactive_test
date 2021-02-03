@@ -58,6 +58,12 @@ $authColor: $colorLightSecondary;
       margin-right: 28px;
       color: $authColor;
 
+      &-icon {
+        width: 20px;
+        height: 20px;
+        margin-right: 14px;
+      }
+
       &:after {
         position: absolute;
         bottom: -5px;
@@ -72,20 +78,6 @@ $authColor: $colorLightSecondary;
 
       &:last-child {
         margin-right: 0;
-      }
-
-      &_profile {
-        padding-left: 35px;
-
-        &:before {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 20px;
-          height: 20px;
-          background: url('../img/header/auth/profile.svg') 100% no-repeat;
-          content: "";
-        }
       }
 
       &:hover {

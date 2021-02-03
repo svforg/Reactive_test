@@ -6,8 +6,8 @@ body, html {
 
 main {
   position: relative;
-  min-height:101vh;
   padding-top: $headerHeight;
+  padding-bottom: 80px;
   background: $colorLightPrimary;
   @media ($phonesMax) {
     padding-top: $headerHeightMobile;

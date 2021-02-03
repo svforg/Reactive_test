@@ -1,11 +1,25 @@
 /***************************** refactor this merge with radio *********/
 
-$labelBg : $colorLightSecondary;
+$labelBg : $colorLightThird;
 $labelBgBefore : $colorDarkPrimary;
 $labelBgActive : $colorLightSecondary;
 $labelBorderColor : $colorBlueSecondary;
 
 .checkbox {
+  &-icon {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    width: 20px;
+    height: 20px;
+    padding: 2px;
+    background: $colorLightSecondary;
+    border: 2px solid $colorDarkPrimary;
+
+    use svg {
+      fill: $labelBorderColor;
+    }
+  }
 
   &-label {
     position: relative;
@@ -17,28 +31,34 @@ $labelBorderColor : $colorBlueSecondary;
     border-radius: $borderRadiusPrimary;
     cursor: pointer;
 
-    &:before {
-      position: absolute;
-      top: 16px;
-      left: 16px;
-      width: 20px;
-      height: 20px;
-      background: #fff;
-      border: 2px solid $labelBgBefore;
-      content: "";
-    }
+    //&:before {
+    //  position: absolute;
+    //  top: 16px;
+    //  left: 16px;
+    //  width: 20px;
+    //  height: 20px;
+    //  background: #fff;
+    //  border: 2px solid $labelBgBefore;
+    //  content: "";
+    //}
 
     &_active {
       background: $labelBgActive;
       border-color: $labelBorderColor;
 
-      &:before {
-        background: url(/Reactive_test/img/service/form/icon-check.svg) center / 12px 10px no-repeat, $labelBorderColor;
-        border-color: $labelBorderColor;
-        content: "";
+      .checkbox-icon {
+        background: $colorBlueSecondary;
+        border-color: $colorBlueSecondary;
       }
+
+      //&:before {
+      //  background: url(/Reactive_test/img/service/form/icon-check.svg) center / 12px 10px no-repeat, $labelBorderColor;
+      //  border-color: $labelBorderColor;
+      //  content: "";
+      //}
     }
   }
+
 
   &-input {
     position: absolute;

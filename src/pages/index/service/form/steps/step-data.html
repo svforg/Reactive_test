@@ -1,0 +1,162 @@
+<fieldset class="form__step step">
+  <span class="h4 step__title">
+    <svg class="step__title-icon">
+      <use xlink:href="#icon-check"/>
+    </svg>
+    Данные заявителя
+  </span>
+
+  @@include('edit/edit.html')
+
+  <div class="step__collapse">
+    <div class="step__group">
+      <label class="input-label step__input-label">
+        Фамилия
+        <input
+          class="input-field"
+          name="surname"
+          type="text"
+          required
+          value="Константинопольский"
+        />
+      </label>
+    </div>
+
+    <div class="step__group">
+      <label class="input-label step__input-label">
+        Имя
+        <input
+          class="input-field"
+          name="name"
+          type="text"
+          required
+        />
+      </label>
+    </div>
+
+    <div class="step__group">
+      <label class="input-label step__input-label">
+        Отчество
+        <input
+          class="input-field"
+          name="grand-name"
+          type="text"
+          required
+        />
+      </label>
+    </div>
+
+    <div class="step__group">
+      <label class="input-label step__input-label">
+        Электронная почта
+        <input
+          class="input-field"
+          name="email"
+          type="email"
+          required
+        />
+      </label>
+    </div>
+
+    <div class="step__group">
+      <label class="input-label step__input-label">
+        Телефон
+
+        <input
+          class="input-field"
+          name="phone"
+          type="tel"
+          required
+        />
+      </label>
+    </div>
+
+    <div class="step__group-title">
+      <strong>
+        Документ, удостоверяющий личность
+      </strong>
+    </div>
+
+    <div class="step__group">
+      <label class="input-label step__input-label">
+        Документ
+        <input
+          class="input-field"
+          name="doc"
+          type="text"
+          required
+        />
+      </label>
+    </div>
+
+    <div class="step__group-inner step__group-inner-doc">
+      <div class="step__group step__group-series">
+        <label class="input-label step__input-label">
+          Серия
+          <input
+            class="input-field"
+            name="doc-series"
+            type="text"
+            required
+          />
+        </label>
+      </div>
+
+      <div class="step__group step__group-number">
+        <label class="input-label step__input-label">
+          Номер
+          <input
+            class="input-field"
+            name="doc-number"
+            type="text"
+            required
+          />
+        </label>
+      </div>
+    </div>
+
+    <div class="step__group-caption">
+      Когда выдан
+    </div>
+
+    <div class="step__group-inner step__group-inner-date">
+      <div class="step__group step__group-day">
+        <label class="input-label step__input-label">
+          День
+          <input
+            class="input-field"
+            name="date-day"
+            type="text"
+            required
+          />
+        </label>
+      </div>
+
+      <div class="step__group step__group-month">
+        <label class="input-label step__input-label">
+          Месяц
+          <input
+            class="input-field"
+            name="date-month"
+            type="text"
+            required
+          />
+        </label>
+      </div>
+
+      <div class="step__group step__group-year">
+        <label class="input-label step__input-label">
+          Год
+          <input
+            class="input-field"
+            name="date-year"
+            type="text"
+            required
+          />
+        </label>
+      </div>
+    </div>
+
+    <button class="button step__button-next step__button-next_second">Продолжить</button>
+  </div>
+</fieldset>

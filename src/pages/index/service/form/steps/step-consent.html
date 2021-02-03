@@ -1,0 +1,80 @@
+<fieldset class="form__step step">
+  <span class="h4 step__title">
+    <svg class="step__title-icon">
+      <use xlink:href="#icon-check"/>
+    </svg>
+
+    Согласие
+  </span>
+
+  @@include('edit/edit.html')
+
+  <div class="step__collapse">
+    <div class="step__list-caption">
+      <strong>
+        Требуется ваше согласие по следующим пунктам:
+      </strong>
+    </div>
+
+    <ul class="step__list">
+      <li class="step__list-item">
+        Я подтверждаю, что вся представленная информация является достоверной и точной;
+      </li>
+      <li class="step__list-item">
+        Я несу ответственность в соответствии с действующим законодательством Российской Федерации за предоставление заведомо ложных или неполных сведений;
+      </li>
+      <li class="step__list-item">
+        Я выражаю свое согласие на необходимое использование и обработку своих персональных данных, в том числе
+        в информационных системах;
+      </li>
+      <li class="step__list-item">
+        Со сроками оказания государственной услуги ознакомлен.
+      </li>
+    </ul>
+
+    <label class="checkbox-label step__checkbox">
+      <input
+        class="checkbox-input"
+        type="checkbox"
+        name="checkbox-consent"
+        required
+      />
+
+      <svg class="checkbox-icon">
+        <use xlink:href="#icon-check"/>
+      </svg>
+
+      <span class="checkbox-name">
+        Я подтверждаю свое согласие со всеми вышеперечисленными пунктами
+      </span>
+    </label>
+
+    <label class="checkbox-label step__checkbox">
+      <input
+        class="checkbox-input"
+        type="checkbox"
+        name="checkbox-knowledge"
+        required
+      />
+
+      <svg class="checkbox-icon">
+        <use xlink:href="#icon-check"/>
+      </svg>
+
+      <span class="checkbox-name">
+        Я уведомлен о том, что результат будет получен в электронном виде
+      </span>
+    </label>
+
+    <div class="step__notice">
+      <svg class="step__notice-icon">
+        <use xlink:href="#icon-notice"/>
+      </svg>
+      <span class="step__notice-text">
+        Пожалуйста, еще раз внимательно проверьте все данные перед отправкой
+      </span>
+    </div>
+
+    <button class="button step__button-send" type="submit">Отправить</button>
+  </div>
+</fieldset>

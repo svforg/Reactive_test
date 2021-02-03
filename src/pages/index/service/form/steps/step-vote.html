@@ -1,0 +1,46 @@
+<fieldset class="form__step step">
+
+  <span class="h4 step__title ">
+    <svg class="step__title-icon">
+      <use xlink:href="#icon-check"/>
+    </svg>
+    Выбор заявителя
+  </span>
+
+  @@include('edit/edit.html')
+
+  <div class="step__collapse">
+    <label class="radio-label step__radio radio-label_active">
+      <input
+        class="radio-input"
+        type="radio"
+        name="radio-declarer"
+        value="individual"
+        checked
+      />
+
+      <span class="radio-name">
+        Константинопольский К.К.
+      </span>
+
+      <span class="radio-type">
+        Физическое лицо
+      </span>
+    </label>
+
+    <label class="radio-label step__radio">
+      <input
+        class="radio-input"
+        type="radio"
+        name="radio-declarer"
+        value="legal-entity"
+      />
+
+      <span class="radio-name">ООО «Константинополь»</span>
+
+      <span class="radio-type">Юридическое лицо</span>
+    </label>
+
+    <button class="button step__button-next">Продолжить</button>
+  </div>
+</fieldset>
