@@ -2,7 +2,7 @@
   "name": "Reactive_test",
   "homepage": "https://svforg.github.io/Reactive_test/",
   "version": "1.0.0",
-  "main": "gulpfile.gulpfile.babel.js",
+  "main": "gulpfile.babel.js",
   "dependencies": {
     "browser-sync": "^2.26.13",
     "gh-pages": "^3.1.0",
@@ -20,6 +20,7 @@
     "gulp-sourcemaps": "^2.6.5",
     "gulp-stylelint": "^9.0.0",
     "gulp-uglify": "^3.0.2",
+    "gulp-uglify-es": "^2.0.0",
     "gulp-watch": "^4.1.1",
     "i": "^0.3.6",
     "jshint": "^2.12.0",

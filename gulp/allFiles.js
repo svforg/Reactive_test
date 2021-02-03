@@ -2,10 +2,10 @@
 
 const path = {
     release: {
-        localDomain: 'test.rktv-local/',
+        localDomain: 'reactive/',
         mainPath : './build',
         stylePath: './build/css',
-        templatePath: './build',
+        templatePath: './Reactive_test/build',
         imagesPath: './build/img/',
         scriptsPath: './build/js/',
         fontsPath: './build/fonts/'
@@ -54,4 +54,3 @@ exports.watch = () => {
         path.release.templatePath,
     )
 };
-

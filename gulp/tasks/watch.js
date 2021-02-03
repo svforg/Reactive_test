@@ -3,8 +3,7 @@ const browserSync = require('browser-sync').create();
 
 import * as stylesFile from './styles.js';
 import * as templateFile from './template.js';
-import * as scriptsFile from './scripts.js';
-
+import * as scriptsFile from './scriptsDev.js';
 
 exports.watch = function (
     slugProxyName,

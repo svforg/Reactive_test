@@ -33,7 +33,7 @@ $labelBorderColor : $colorBlueSecondary;
       border-color: $labelBorderColor;
 
       &:before {
-        background: url(/../img/service/form/icon-check.svg) center / 12px 10px no-repeat, $labelBorderColor;
+        background: url(/Reactive_test/img/service/form/icon-check.svg) center / 12px 10px no-repeat, $labelBorderColor;
         border-color: $labelBorderColor;
         content: "";
       }
