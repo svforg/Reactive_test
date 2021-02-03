@@ -1,28 +1,46 @@
-body, html {
+html {
   color: $colorDarkPrimary;
-  font-size: 18px;
+  font-weight: normal;
+  font-size: 100%;
   font-family: $fontPrimary;
   line-height: 24px;
   -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+
+  @media only screen and ($laptopsMax) {
+    font-size: 95%;
+  }
+
+  @media only screen and ($largeTabletsMax) {
+    font-size: 93%;
+  }
+
+  @media only screen and ($smallTabletsMax) {
+    font-size: 88%;
+  }
+
+  @media only screen and ($phonesMax) {
+    font-size: 86%;
+  }
 }
 
 h1, .h1 {
-  margin: $step9 0 26px 0;
-  padding: 0;
+  margin: 0 0 23px 0;
+  font-size: $size36px;
   font-family: $fontSecondary;
-  @include fluidFontSize(24px, 36px, 480px, 768px, 18px);
-  @include fluidLineHeight(32px, 48px, 480px, 768px, 26px);
-  @media ($phonesMax) {
+  line-height: 48px;
+
+  @media only screen and ($phonesMax) {
     margin: $step6 0 $step3 0;
   }
 }
 
 h2, .h2 {
   margin: $step3 0 14px 0;
-  padding: 0;
+  font-size: $size30px;
   font-family: $fontSecondary;
-  @include fluidFontSize(20px, 30px, 480px, 768px, 18px);
-  @include fluidLineHeight(30px, 40px, 480px, 768px, 26px);
+  line-height: 40px;
+
   @media ($phonesMax) {
     margin: $step2 0 $step1 0;
   }
@@ -30,10 +48,10 @@ h2, .h2 {
 
 h3, .h3 {
   margin: $step3 0 14px 0;
-  padding: 0;
+  font-size: $size24px;
   font-family: $fontSecondary;
-  @include fluidFontSize(18px, 24px, 480px, 768px, 18px);
-  @include fluidLineHeight(24px, 32px, 480px, 768px, 26px);
+  line-height: 32px;
+
   @media ($phonesMax) {
     margin: $step2 0 $step1 0;
   }
@@ -41,10 +59,10 @@ h3, .h3 {
 
 h4, .h4 {
   margin: $step3 0 14px 0;
-  padding: 0;
+  font-size: $size21px;
   font-family: $fontSecondary;
-  @include fluidFontSize(16px, 21px, 480px, 768px, 21px);
-  @include fluidLineHeight(24px, 32px, 480px, 768px, 32px);
+  line-height: 32px;
+
   @media ($phonesMax) {
     margin: $step2 0 $step1 0;
   }
@@ -52,10 +70,10 @@ h4, .h4 {
 
 h5, .h5 {
   margin: $step3 0 14px 0;
-  padding: 0;
+  font-size: $size25px;
   font-family: $fontSecondary;
-  @include fluidFontSize(18px, 25px, 480px, 768px, 18px);
-  @include fluidLineHeight(24px, 35px, 480px, 768px, 26px);
+  line-height: 35px;
+
   @media ($phonesMax) {
     margin: $step2 0 $step1 0;
   }
@@ -63,38 +81,30 @@ h5, .h5 {
 
 h6, .h6 {
   margin: $step3 0 14px 0;
-  padding: 0;
-  font-family: $fontPrimary;
-  @include fluidFontSize(16px, 18px, 480px, 768px, 18px);
-  @include fluidLineHeight(20px, 24px, 480px, 768px, 24px);
+  font-size: $size18px;
+  font-family: $fontSecondary;
+  line-height: 24px;
+
   @media ($phonesMax) {
     margin: $step2 0 $step1 0;
   }
 }
-.hero_display {
-  margin: $step9 0 26px 0;
-  padding: 0;
-  font-family: $fontSecondary;
-  @include fluidFontSize(24px, 48px, 480px, 1280px, 18px);
-  @include fluidLineHeight(32px, 56px, 480px, 1280px, 26px);
-  @media ($phonesMax) {
-    margin: $step6 0 $step3 0;
-  }
-}
+
 strong {
-  @include fluidFontSize(16px, 18px, 480px, 768px, 18px);
-  @include fluidLineHeight(20px, 24px, 480px, 768px, 24px);
+  font-size: $size18px;
+  line-height: 24px;
 }
+
 small {
   margin: $step2 0;
-  padding: 0;
-  @include fluidFontSize(13px, 14px, 480px, 1280px, 14px);
-  @include fluidLineHeight(22px, 20px, 480px, 1280px, 20px);
+  font-size: $size14px;
+  line-height: 24px;
 }
 
 p {
   margin: 14px 0;
-  padding: 0;
+  font-size: $size18px;
+  line-height: 24px;
   @media ($phonesMax) {
     margin: $step1 0;
   }
@@ -108,9 +118,15 @@ p {
   }
 }
 
+
+li {
+  font-size: $size18px;
+}
+
 a {
   margin: 0;
   padding: 0;
+  font-size: $size18px;
 }
 
 a, a:active, a:visited {
@@ -120,6 +136,7 @@ a, a:active, a:visited {
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
+  display: block;
   font-weight: bold;
 
   &:first-child {
@@ -133,6 +150,13 @@ h1, h2, h3, h4, h5, h6,
   }
 }
 
-.h1, .h2, .h3, .h4, .h5, .h6 {
-  display: block;
+.hero_display {
+  margin: 0 0 26px 0;
+  font-size: $size48px;
+  font-family: $fontSecondary;
+  line-height: 56px;
+
+  @media ($phonesMax) {
+    margin: $step6 0 $step3 0;
+  }
 }

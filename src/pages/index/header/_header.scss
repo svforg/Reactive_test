@@ -3,12 +3,11 @@ $logoColor: $colorLightSecondary;
 $authColor: $colorLightSecondary;
 
 .site-header {
-  position: fixed;
-  top:0;
-  left:0;
+  position: sticky;
+  top: 0;
   z-index: 5;
   width: 100%;
-  background-color: $headerBg;
+  background: $headerBg;
 
   &__inner {
     display: flex;
@@ -31,7 +30,7 @@ $authColor: $colorLightSecondary;
     }
 
     &__image {
-      max-width: 38px;
+      max-width: 31px;
       height: inherit;
       margin-right: 21px;
     }
@@ -62,6 +61,7 @@ $authColor: $colorLightSecondary;
         width: 20px;
         height: 20px;
         margin-right: 14px;
+        opacity: 0.6;
       }
 
       &:after {

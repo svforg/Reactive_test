@@ -1,27 +1,28 @@
-$colorDarkPrimary                 : var(--dark-primary);
+$colorDarkPrimary                 : #3B4256;
 
-$colorLightPrimary                : var(--light-primary);
-$colorLightSecondary              : var(--light-secondary);
-$colorLightThird                  : var(--light-third);
+$colorLightPrimary                : #F4F7FB;
+$colorLightSecondary              : #FFFFFF;
+$colorLightThird                  : #F5F5F7;
 
-$colorBluePrimary                 : var(--blue-primary);
-$colorBlueSecondary               : var(--blue-secondary);
-$colorBlueThird                   : var(--blue-third);
+$colorBluePrimary                 : #3684E2;
+$colorBlueSecondary               : #0061D9;
+$colorBlueThird                   : #0050B2;
 
-$colorYellowPrimary               : var(--yellow-primary);
-$colorYellowSecondary             : var(--yellow-secondary);
+$colorYellowPrimary               : #FF9500;
+$colorYellowSecondary             : #FFF5E5;
 
-$colorGreenPrimary                : var(--green-primary);
+$colorGreenPrimary                : #1BC400;
 
-$colorRedPrimary                  : var(--red-primary);
+$colorRedPrimary                  : #a94442;
 
-$transitionDurationPrimary        : var(--transition-duration-primary);
-$transitionDurationSecondary      : var(--transition-duration-secondary);
 
-$transitionFunctionPrimary        : var(--transition-function-primary);
-$transitionFunctionSecondary      : var(--transition-function-secondary);
+$transitionDurationPrimary        : 0.2s;
+$transitionDurationSecondary      : 0.5s;
 
-$borderRadiusPrimary              : var(--border-radius-primary);
+$transitionFunctionPrimary        : ease-in-out;
+$transitionFunctionSecondary      : cubic-bezier(.4,0,.2,1);
 
-$fontPrimary                      : var(--font-primary);
-$fontSecondary                    : var(--font-secondary);
+$borderRadiusPrimary              : 4px;
+
+$fontPrimary                      : GostUI2, Helvetica, sans-serif;
+$fontSecondary                    : SFProDisplay, Arial, sans-serif;

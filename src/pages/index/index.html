@@ -1,15 +1,16 @@
-@@include('header/header.html')
-<main class="page-content">
+<div class="site-inner">
+    @@include('header/header.html')
 
-    <div class="wrapper">
+    <main class="page-content">
+        <div class="wrapper">
+            <section class="service">
+                @@include('service/header/header.html')
+                @@include('service/form/form.html')
+            </section>
+        </div>
+    </main>
 
-        <section class="service">
+    @@include('footer/footer.html')
+</div>
 
-            @@include('service/header/header.html')
-
-            @@include('service/form/form.html')
-        </section>
-    </div>
-</main>
-@@include('footer/footer.html')
 @@include('../../general/svg-sprites/sprite.svg')

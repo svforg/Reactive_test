@@ -25,22 +25,12 @@ $labelBorderColor : $colorBlueSecondary;
     position: relative;
     display: flex;
     flex-direction: column;
-    padding: 14px 14px 14px 44px;
+    padding: 14px 14px 14px 46px;
     background: $labelBg;
     border: 2px solid transparent;
     border-radius: $borderRadiusPrimary;
     cursor: pointer;
 
-    //&:before {
-    //  position: absolute;
-    //  top: 16px;
-    //  left: 16px;
-    //  width: 20px;
-    //  height: 20px;
-    //  background: #fff;
-    //  border: 2px solid $labelBgBefore;
-    //  content: "";
-    //}
 
     &_active {
       background: $labelBgActive;
@@ -50,12 +40,6 @@ $labelBorderColor : $colorBlueSecondary;
         background: $colorBlueSecondary;
         border-color: $colorBlueSecondary;
       }
-
-      //&:before {
-      //  background: url(/Reactive_test/img/service/form/icon-check.svg) center / 12px 10px no-repeat, $labelBorderColor;
-      //  border-color: $labelBorderColor;
-      //  content: "";
-      //}
     }
   }
 

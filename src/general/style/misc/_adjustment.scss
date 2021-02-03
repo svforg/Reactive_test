@@ -6,7 +6,6 @@ body, html {
 
 main {
   position: relative;
-  padding-top: $headerHeight;
   padding-bottom: 80px;
   background: $colorLightPrimary;
   @media ($phonesMax) {
@@ -35,4 +34,10 @@ li {
     max-width: 100%;
     padding: $paddingWrapperMobile;
   }
+}
+
+.site-inner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }

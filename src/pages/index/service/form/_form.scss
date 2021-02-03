@@ -9,7 +9,7 @@ $stepCounterColor : $colorLightSecondary;
   .step {
     position: relative;
     margin-bottom: 24px;
-    padding: 24px 188px 24px 96px;
+    padding: 24px 188px 24px 92px;
     background: $stepBg;
     border-radius: $borderRadiusPrimary;
     counter-increment: steps-counter;
@@ -28,6 +28,9 @@ $stepCounterColor : $colorLightSecondary;
       width: 48px;
       height: 48px;
       color: $stepCounterColor;
+      font-weight: 400;
+      font-size: $size20px;
+      font-family: $fontSecondary;
       background: $stepCounterBg;
       border-radius: 50%;
       content: counter(steps-counter);
@@ -192,23 +195,18 @@ $stepCounterColor : $colorLightSecondary;
     border-radius: $borderRadiusPrimary;
     counter-increment: steps-counter;
 
-    &::before {
-      position: absolute;
-      top: 16px;
-      left: 16px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 48px;
-      height: 48px;
-      color: $stepCounterColor;
-      background: url(../img/service/form/icon-check.svg) center / 20px no-repeat, $stepReadyCounterBg;
-      border-radius: 50%;
-      content: "";
-    }
-
     &__title {
-
+      &-icon {
+        position: absolute;
+        top: 16px;
+        left: 16px;
+        width: 48px;
+        height: 48px;
+        padding: 14px;
+        background: $stepReadyCounterBg;
+        border-radius: 50%;
+        opacity: 1;
+      }
     }
 
     &__description {
